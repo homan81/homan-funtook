@@ -202,7 +202,8 @@ export default function WelcomeBabyDecoration() {
               : "/assets/sectionimages/welcome.svg";
 
           return (
-            <Link key={product.id} href={`/products/${product.id}`}>
+            // <Link href={`/product-details/${product.id}`}>
+            <Link href={`/product-details/${product.id}`}>
               <img
                 src={imageUrl}
                 alt={product.productName}

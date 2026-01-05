@@ -216,7 +216,8 @@ export default function Balloon_Hampers() {
               : "/assets/sectionimages/ballon1.svg"; // ✅ fallback image
 
           return (
-            <Link key={product.id} href={`/products/${product.id}`}>
+            // <Link key={product.id} href={`/products/${product.id}`}>
+            <Link href={`/product-details/${product.id}`}>
               <img
                 src={imageUrl}
                 alt={product.productName}

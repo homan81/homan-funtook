@@ -219,7 +219,8 @@ export default function Surprising_Loved_Once() {
               : "/assets/home/explore/birthday_deco.jpg";
 
           return (
-            <Link key={product.id} href={`/products/${product.id}`}>
+            // <Link key={product.id} href={`/products/${product.id}`}>
+            <Link href={`/product-details/${product.id}`}>
               <img
                 src={imageUrl}
                 alt={product.productName}

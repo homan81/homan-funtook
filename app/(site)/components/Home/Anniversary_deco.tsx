@@ -124,6 +124,7 @@ interface Product {
   productImage: string | null;
   price: number;
   sellingPrice: number;
+  slug: string; // ✅ ADD THIS
 }
 
 /* =======================
@@ -224,7 +225,8 @@ export default function Anniversary_deco() {
               : "/assets/home/explore/aniversary_deco.jpg";
 
           return (
-            <Link key={product.id} href={`/products/${product.id}`}>
+            // <Link key={product.id} href={`/products/${product.id}`}>
+            <Link href={`/product-details/${product.id}`}>
               <img
                 src={imageUrl}
                 alt={product.productName}

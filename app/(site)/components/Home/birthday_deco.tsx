@@ -168,6 +168,9 @@ import Baby_Shower from "./Baby_Shower";
 import Hampers from "./Hampers";
 import Anniversary_deco from "./Anniversary_deco";
 import Surprise_Love from "./Surprise_Love";
+import Section_11 from "./Section_11";
+import Freq_ques from "./Freq_ques";
+import Book_Decors from "./Book _Decors";
 
 interface Category {
   id: number;
@@ -309,10 +312,11 @@ export default function BirthdayDeco() {
         : "/assets/home/birthday_deco/1.jpg";
 
     return (
-      <Link
-        key={product.id}
-        href={`/products/${product.id}`}
-      >
+      // <Link
+      //   key={product.id}
+      //   href={`/products/${product.id}`}
+      // >
+      <Link href={`/product-details/${product.id}`}>
         <img
           src={imageUrl}
           alt={product.productName}
@@ -437,7 +441,7 @@ export default function BirthdayDeco() {
       <New_Collections />
 
       {/* The New Collections Section */}
-      <Surprise_Love/>
+      <Surprise_Love />
 
       {/* Kids Birthday Themes Section */}
       <Kids_Birthday />
@@ -452,6 +456,12 @@ export default function BirthdayDeco() {
       <Hampers />
       {/* Service Info Section */}
       <Service_Bars />
+      {/* Section_11 Section */}
+      <Section_11 />
+      {/* Freq_ques Section */}
+      <Freq_ques />
+      {/* Book_Decors Section */}
+      <Book_Decors />
     </div>
   );
 }
